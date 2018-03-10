@@ -1,0 +1,79 @@
+/* Colors
+Grayish: #EFEFEF
+Dark GrayishL #A9A9A9
+Pinkish Reddish: #FF3B3F
+Light Baby Bluish: #CAEBF2
+*/
+
+
+html{
+  min-height: 100%;
+  position: relative;
+}
+/* Body */
+body{
+  margin: 0;
+  background-color: #EFEFEF;
+  font-family: 'Roboto', sans-serif;
+}
+/* Footer */
+footer{
+  background-color: white;
+  color: #A9A9A9;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+/* Footer Links */
+footer a{
+  text-decoration: none;
+  color: #A9A9A9;
+}
+footer a:hover{
+  color: #FF3B3F
+}
+/* Navbar */
+.navbar{
+  background-color: white;
+  overflow: hidden;
+}
+/* Navbar Links */
+.navbar a {
+  text-align: center;
+  float: right;
+  color: #A9A9A9;
+  text-decoration: none;
+  padding: 16px 16px;
+  font-size: 22px;
+}
+/* On Link Hover */
+.navbar a:hover{
+  color: #FF3B3F;
+}
+/* Navbar Homelink */
+#navbar-homelink{
+  float: left;
+  color: #FF3B3F;
+}
+/* Logo */
+.navbar-logo{
+  font-weight: bold;
+}
+.panel{
+  background-color: white;
+  display: inline-block;
+  max-height: 100%;
+  padding: 10px;
+  margin: 2rem;
+  position: relative;
+  max-width: 95%;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.14), 0 4px 6px rgba(0,0,0,0.21);
+  border-radius: 2px;
+}
+.panel:hover{
+/*  Implement something for hover maybe?  */
+}
