@@ -124,7 +124,12 @@ footer a:hover {
   font-weight: bold;
 }
 
-/* Logo */
+.navbar-icon {
+  display: none;
+  font-weight: 900;
+}
+
+/* CSCB20 Logo Text */
 
 #navbar-homelink {
   float: left;
@@ -143,7 +148,7 @@ footer a:hover {
 .profile-panel,
 .sylinfo-panel,
 .assignment-panel,
-.labs-panel{
+.labs-panel {
   background-color: white;
   display: inline-block;
   max-height: 100%;
@@ -168,8 +173,8 @@ footer a:hover {
 }
 
 .profile-img {
-  width: 400px;
-  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
 }
 
 .profile-links {
@@ -194,7 +199,7 @@ footer a:hover {
   /*  Implement animation  */
 }
 
-.labs-panel{
+.labs-panel {
   width: 20%;
   vertical-align: middle;
 }
@@ -243,19 +248,20 @@ footer a:hover {
   background-color: #F4B3CD;
 }
 
-.hours-left{
+.hours-left {
   float: left;
   width: 50%;
 }
 
-.hours-right{
+.hours-right {
   float: right;
   width: 50%;
 }
 
-#office-hours{
+#office-hours {
   width: 60%;
 }
+
 /* Style for the go to top button */
 
 #scroll-to-top {
@@ -278,12 +284,69 @@ footer a:hover {
   color: white;
   font-weight: 900;
 }
-.grayedout{
+
+.grayedout {
   background-color: #454A4C;
 }
-#assignment3{
+
+#assignment3 {
   opacity: 0.95;
 }
-.rounded{
+
+.rounded {
   border-radius: 20px;
+}
+
+/* Screensize less than 970px */
+
+@media screen and (max-width: 970px) {
+  .labs-panel {
+    width: 75% !important;
+  }
+  .profile-img {
+    height: 50% !important;
+    width: 50% !important;
+  }
+  .sylinfo-panel {
+    max-height: 95% !important;
+    max-width: 95% !important;
+  }
+  .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar.rsponsive a:not(:last-child) {
+    display: none;
+  }
+  .navbar a {
+    display: block;
+    float: left;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    padding: 14px 14px;
+    font-size: 14px;
+  }
+  .navbar.responsive {
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+  }
+  .navbar.responsive a.icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  .panel {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  #calendar-iframe {
+    max-width: 95%;
+  }
 }
